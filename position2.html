@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>濮院旅游</title>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	</head>
+	<style>
+		.position2-intro{
+			position: absolute;
+			width: 640px;
+			height: 1138px;
+			z-index: 1;
+		}
+		.scrollbox{
+			
+		}
+	</style>
+
+	<body>
+		<div class="mainMap">
+			<img class="position2-intro" src="res/濮院旅游-地点2介绍.jpg" onclick="show1()">
+			<div class="scrollBox">
+
+			</div>
+		</div>
+	</body>
+	<script>
+		function show1(){
+        	$(".position2-intro").fadeOut(1000);
+		}
+		function show2(){
+        	$(".position1-wishes").fadeIn(1000);
+		}
+		function show3(){
+			$(".position1-ringTheBell").fadeOut(1000,function(){
+				location.href="index.html";
+			});	
+		}
+	</script>
+</html>
